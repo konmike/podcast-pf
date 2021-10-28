@@ -1,0 +1,16 @@
+.button {
+  background-color: white;
+  color: hsl(var(--clr-red));
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border: 2px solid hsl(var(--clr-red));
+  transition: all 250ms;
+
+  &:hover {
+    border: 2px solid hsl(var(--clr-red));
+    background-color: hsl(var(--clr-red));
+    color: white;
+  }
+}
