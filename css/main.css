@@ -122,12 +122,14 @@ footer {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
   background-color: white;
   color: hsl(var(--clr-orange));
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 0.2em 1em;
   border: 1.5px solid hsl(var(--clr-orange));
   transition: all 250ms;
 }
@@ -137,9 +139,10 @@ footer {
   color: white;
 }
 .button::after {
-  content: "";
-  padding-left: 1em;
+  content: "";
+  padding-left: 0.5em;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
+  font-size: 1.6rem;
   display: inline-block;
 }

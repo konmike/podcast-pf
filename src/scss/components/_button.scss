@@ -1,11 +1,13 @@
 .button {
+  display: flex;
+  justify-content: center;
   background-color: white;
   // color: hsl(var(--clr-red));
   color: hsl(var(--clr-orange));
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 0.2em 1em;
   // border: 2px solid hsl(var(--clr-red));
   border: 1.5px solid hsl(var(--clr-orange));
   transition: all 250ms;
@@ -17,10 +19,12 @@
   }
 
   &::after {
-    content: "\f061";
-    padding-left: 1em;
+    // content: "\f061"; //short arrow
+    content: "\f30b"; //long arrow
+    padding-left: 0.5em;
     font-family: "Font Awesome 5 Free";
     font-weight: 800;
+    font-size: 1.6rem;
     display: inline-block;
   }
 }
