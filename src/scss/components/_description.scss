@@ -2,6 +2,10 @@
   padding: 2em;
   padding-bottom: 0;
 
+  .content {
+    max-width: 85%;
+  }
+
   h1 {
     color: hsl(var(--clr-red));
   }
