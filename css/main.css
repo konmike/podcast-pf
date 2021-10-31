@@ -1,5 +1,8 @@
+@charset "UTF-8";
 :root {
   --clr-red: 354, 65%, 51%;
+  --clr-orange: 13, 62%, 61%;
+  --clr-white-tr: 0, 0%, 96%;
 }
 
 *,
@@ -14,6 +17,12 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+body {
+  background-image: url(https://www.prf.cuni.cz/themes/custom/fsv_uk/images/tile.png);
+  background-size: 24px;
+  background-color: hsl(var(--clr-white-tr));
 }
 
 h1,
@@ -32,6 +41,7 @@ h3 {
   display: block;
   max-width: 1024px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .header {
@@ -68,7 +78,7 @@ footer {
   margin: 0;
   margin-bottom: 1em;
   font-size: 1.3rem;
-  color: hsl(var(--clr-red));
+  color: hsl(var(--clr-orange));
 }
 
 .podcast {
@@ -102,16 +112,23 @@ footer {
 
 .button {
   background-color: white;
-  color: hsl(var(--clr-red));
+  color: hsl(var(--clr-orange));
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5em 1em;
-  border: 2px solid hsl(var(--clr-red));
+  border: 1.5px solid hsl(var(--clr-orange));
   transition: all 250ms;
 }
 .button:hover {
-  border: 2px solid hsl(var(--clr-red));
+  border: 1.5px solid hsl(var(--clr-red));
   background-color: hsl(var(--clr-red));
   color: white;
+}
+.button::after {
+  content: "";
+  padding-left: 1em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  display: inline-block;
 }

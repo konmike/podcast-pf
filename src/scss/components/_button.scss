@@ -1,16 +1,26 @@
 .button {
   background-color: white;
-  color: hsl(var(--clr-red));
+  // color: hsl(var(--clr-red));
+  color: hsl(var(--clr-orange));
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5em 1em;
-  border: 2px solid hsl(var(--clr-red));
+  // border: 2px solid hsl(var(--clr-red));
+  border: 1.5px solid hsl(var(--clr-orange));
   transition: all 250ms;
 
   &:hover {
-    border: 2px solid hsl(var(--clr-red));
+    border: 1.5px solid hsl(var(--clr-red));
     background-color: hsl(var(--clr-red));
     color: white;
+  }
+
+  &::after {
+    content: "\f061";
+    padding-left: 1em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    display: inline-block;
   }
 }
