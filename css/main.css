@@ -17,6 +17,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 body {
@@ -32,16 +33,17 @@ h3 {
 }
 
 .description .content,
-.description .footer {
+.podcast-platforms,
+.footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .description .content {
   font-size: 1.2rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
 }
 
-.description .footer {
+.podcast-platforms {
   line-height: 2rem;
 }
 
@@ -65,31 +67,31 @@ h3 {
   margin-left: auto;
 }
 
-footer {
-  margin: 2rem 0;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  padding-inline: 2em;
+}
+.footer .copyrights {
+  line-height: 2rem;
+}
+.footer .logo--pf-uk {
+  max-width: 350px;
+  height: auto;
 }
 
 .description {
-  padding: 2em;
   padding-bottom: 0;
 }
 .description .content {
   max-width: 85%;
+  padding-inline: 2em;
 }
 .description h1 {
   color: hsl(var(--clr-red));
-}
-
-.description .footer {
-  margin: 0;
-  margin-top: 1em;
-  padding: 1.5em 1.5em 1.5em 0;
-}
-.description .footer h2 {
-  margin: 0;
-  margin-bottom: 1em;
-  font-size: 1.3rem;
-  color: hsl(var(--clr-orange));
+  padding: 1em 2em 0 2em;
 }
 
 .podcast {
@@ -115,26 +117,37 @@ footer {
   padding: 0 2rem 1rem 2rem;
 }
 
+.podcast-platforms {
+  margin: 2.5em 0;
+  padding: 2em;
+  background-color: hsl(var(--clr-orange), 50%);
+}
+.podcast-platforms h2 {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  color: hsl(var(--clr-red));
+}
+
 .button-box {
   display: flex;
   gap: 1em;
-  padding: 0;
 }
 
 .button {
   display: flex;
   justify-content: center;
-  background-color: white;
-  color: hsl(var(--clr-orange));
+  background-color: transparent;
+  color: hsl(var(--clr-red));
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.2em 1em;
-  border: 1.5px solid hsl(var(--clr-orange));
+  border: 2px solid hsl(var(--clr-red));
   transition: all 250ms;
 }
 .button:hover {
-  border: 1.5px solid hsl(var(--clr-red));
+  border: 2px solid hsl(var(--clr-red));
   background-color: hsl(var(--clr-red));
   color: white;
 }

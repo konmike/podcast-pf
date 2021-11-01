@@ -1,12 +1,14 @@
 .description {
-  padding: 2em;
+  //   padding: 2em;
   padding-bottom: 0;
 
   .content {
     max-width: 85%;
+    padding-inline: 2em;
   }
 
   h1 {
     color: hsl(var(--clr-red));
+    padding: 1em 2em 0 2em;
   }
 }

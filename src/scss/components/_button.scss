@@ -1,19 +1,20 @@
 .button {
   display: flex;
   justify-content: center;
-  background-color: white;
-  // color: hsl(var(--clr-red));
-  color: hsl(var(--clr-orange));
+  background-color: transparent;
+  color: hsl(var(--clr-red));
+  //   color: hsl(var(--clr-orange));
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.2em 1em;
   // border: 2px solid hsl(var(--clr-red));
-  border: 1.5px solid hsl(var(--clr-orange));
+  //   border: 1.5px solid hsl(var(--clr-orange));
+  border: 2px solid hsl(var(--clr-red));
   transition: all 250ms;
 
   &:hover {
-    border: 1.5px solid hsl(var(--clr-red));
+    border: 2px solid hsl(var(--clr-red));
     background-color: hsl(var(--clr-red));
     color: white;
   }

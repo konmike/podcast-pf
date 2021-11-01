@@ -160,7 +160,7 @@ const UIController = (function () {
 
     // need methods to create select list option
     createEpisode(id, name, description) {
-      const html = `<li><article class="podcast"><h3>${name}</h3><div class="podcast--description">${description}</div><iframe class="podcast--iframe" src="https://open.spotify.com/embed/episode/${id}?utm_source=generator&theme=0" width="100%" height="232" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe></article></li>`;
+      const html = `<li><article class="podcast"><h3>${name}</h3><div class="podcast--description">${description}</div><iframe class="podcast--iframe" src="https://open.spotify.com/embed-podcast/episode/${id}?theme=0" width="100%" height="232" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe></article></li>`;
       document
         .querySelector(DOMElements.selectFeed)
         .insertAdjacentHTML("beforeend", html);

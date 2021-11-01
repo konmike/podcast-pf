@@ -1,3 +1,16 @@
-footer {
-  margin: 2rem 0;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  padding-inline: 2em;
+
+  .copyrights {
+    line-height: 2rem;
+  }
+
+  .logo--pf-uk {
+    max-width: 350px;
+    height: auto;
+  }
 }
