@@ -1,8 +1,8 @@
-import * as spotify from "../../.vscode/spotify.js";
+import * as config from "../../config.js";
 
 const APIController = (function () {
-  const clientId = spotify.default.clientId;
-  const clientSecret = spotify.default.clientSecret;
+  const clientId = config.default.clientId;
+  const clientSecret = config.default.clientSecret;
 
   // private methods
   const _getToken = async () => {
@@ -23,7 +23,7 @@ const APIController = (function () {
     const token = await _getToken();
     // console.log(token)
     const result = await fetch(
-    //   `https://api.spotify.com/v1/shows/73kX0Bae7x1ToI9dJ6Nu2O/episodes?market=ES`,
+      //   `https://api.spotify.com/v1/shows/73kX0Bae7x1ToI9dJ6Nu2O/episodes?market=ES`,
       `https://api.spotify.com/v1/shows/1dNqQuHMd9o1ns1mn8Ut7S/episodes?market=ES`,
       {
         method: "GET",
@@ -74,7 +74,6 @@ const APPController = (function (UICtrl, APICtrl) {
 
   // get genres on page load
   const loadEpisodes = async () => {
-    
     const episodes = await APICtrl.getEpisodes();
     // console.log(episodes);
 
@@ -86,7 +85,7 @@ const APPController = (function (UICtrl, APICtrl) {
 
   return {
     init() {
-    //   console.log("App is starting");
+      //   console.log("App is starting");
       loadEpisodes();
     },
   };
