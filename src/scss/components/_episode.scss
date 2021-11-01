@@ -1,8 +1,10 @@
-.podcast {
+.episode {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0 1rem;
+  margin-bottom: 2em;
+  padding: 2em;
 
   h3 {
     width: 100%;
@@ -11,8 +13,6 @@
 
   &--description {
     max-width: 50%;
-    line-height: 1.7rem;
-    font-family: Calibri, Arial;
   }
   &--iframe {
     max-width: calc(50% - 1rem);

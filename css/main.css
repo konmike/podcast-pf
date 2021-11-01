@@ -47,6 +47,12 @@ h3 {
   line-height: 2rem;
 }
 
+.episode--description {
+  line-height: 1.8rem;
+  font-family: Calibri, Arial;
+  font-size: 1.2rem;
+}
+
 .page {
   display: block;
   max-width: 1024px;
@@ -94,27 +100,31 @@ h3 {
   padding: 1em 2em 0 2em;
 }
 
-.podcast {
+.episode {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0 1rem;
+  margin-bottom: 2em;
+  padding: 2em;
 }
-.podcast h3 {
+.episode h3 {
   width: 100%;
   margin-bottom: 2rem;
 }
-.podcast--description {
+.episode--description {
   max-width: 50%;
-  line-height: 1.7rem;
-  font-family: Calibri, Arial;
 }
-.podcast--iframe {
+.episode--iframe {
   max-width: calc(50% - 1rem);
 }
 
-.podcast-feed {
-  padding: 0 2rem 1rem 2rem;
+.episode-feed {
+  padding-bottom: 1em;
+}
+.episode-feed li:nth-child(2n) .episode {
+  background-color: hsl(var(--clr-red));
+  color: white;
 }
 
 .podcast-platforms {

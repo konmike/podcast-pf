@@ -1,0 +1,8 @@
+.episode-feed {
+  padding-bottom: 1em;
+
+  li:nth-child(2n) .episode {
+    background-color: hsl(var(--clr-red));
+    color: white;
+  }
+}

@@ -39,7 +39,8 @@ const APIController = (function () {
     const token = await _getToken();
     // console.log(token)
     const result = await fetch(
-      `https://api.spotify.com/v1/shows/73kX0Bae7x1ToI9dJ6Nu2O/episodes?market=ES`,
+    //   `https://api.spotify.com/v1/shows/73kX0Bae7x1ToI9dJ6Nu2O/episodes?market=ES`,
+      `https://api.spotify.com/v1/shows/1dNqQuHMd9o1ns1mn8Ut7S/episodes?market=ES`,
       {
         method: "GET",
         headers: { Authorization: "Bearer " + token },
@@ -160,7 +161,7 @@ const UIController = (function () {
 
     // need methods to create select list option
     createEpisode(id, name, description) {
-      const html = `<li><article class="podcast"><h3>${name}</h3><div class="podcast--description">${description}</div><iframe class="podcast--iframe" src="https://open.spotify.com/embed-podcast/episode/${id}?theme=0" width="100%" height="232" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe></article></li>`;
+      const html = `<li><article class="episode"><h3>${name}</h3><div class="episode--description">${description}</div><iframe class="episode--iframe" loading="lazy" src="https://open.spotify.com/embed-podcast/episode/${id}?theme=0" width="100%" height="232" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe></article></li>`;
       document
         .querySelector(DOMElements.selectFeed)
         .insertAdjacentHTML("beforeend", html);
