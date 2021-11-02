@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .header {
   border-bottom: 5px solid hsl(var(--clr-red));
   min-height: 500px;
@@ -10,8 +12,18 @@
     url("../image/foto-min-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include mq(mobile) {
+    min-height: auto;
+  }
+
   .logo {
     max-height: 350px;
     margin-left: auto;
+
+    @include mq(mobile) {
+      max-height: 250px;
+      margin: 0 auto;
+    }
   }
 }

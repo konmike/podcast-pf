@@ -3,3 +3,11 @@
   --clr-orange: 13, 62%, 61%;
   --clr-white-tr: 0, 0%, 96%;
 }
+
+$breakpoints: (
+  //min-width
+  desktop: 68.125em,
+  //max-width
+  tablet: 68.125em,
+  mobile: 40em
+);

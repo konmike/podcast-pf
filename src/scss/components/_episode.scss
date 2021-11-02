@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .episode {
   display: flex;
   flex-direction: row;
@@ -5,6 +7,11 @@
   gap: 0 1rem;
   margin-bottom: 2em;
   padding: 2em;
+
+  @include mq(mobile) {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
 
   h3 {
     width: 100%;
@@ -16,5 +23,16 @@
   }
   &--iframe {
     max-width: calc(50% - 1rem);
+    margin-top: 0;
+    @include mq(mobile) {
+      margin-top: 2em;
+    }
+  }
+
+  &--description,
+  &--iframe {
+    @include mq(mobile) {
+      max-width: 100%;
+    }
   }
 }

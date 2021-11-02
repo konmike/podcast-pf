@@ -1,5 +1,8 @@
+@use "../abstract" as *;
+
 .button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: transparent;
   color: hsl(var(--clr-red));
@@ -27,5 +30,9 @@
     font-weight: 800;
     font-size: 1.6rem;
     display: inline-block;
+  }
+
+  @include mq(mobile) {
+    width: fit-content;
   }
 }

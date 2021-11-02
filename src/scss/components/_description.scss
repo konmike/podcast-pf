@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .description {
   //   padding: 2em;
   padding-bottom: 0;
@@ -5,6 +7,10 @@
   .content {
     max-width: 85%;
     padding-inline: 2em;
+
+    @include mq(mobile) {
+      max-width: 100%;
+    }
   }
 
   h1 {

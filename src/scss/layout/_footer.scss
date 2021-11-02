@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -12,5 +14,14 @@
   .logo--pf-uk {
     max-width: 350px;
     height: auto;
+
+    @include mq(mobile) {
+      max-width: 100%;
+    }
+  }
+
+  @include mq(mobile) {
+    flex-direction: column;
+    margin-bottom: 0;
   }
 }
