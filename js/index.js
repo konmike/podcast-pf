@@ -1,4 +1,4 @@
-import * as config from "../../config.js";
+import * as config from "../config.js";
 
 const APIController = (function () {
   const clientId = config.default.clientId;

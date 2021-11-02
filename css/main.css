@@ -1,1 +1,171 @@
-﻿:root{--clr-red: 354, 65%, 51%;--clr-orange: 13, 62%, 61%;--clr-white-tr: 0, 0%, 96%}*,::after,::before{box-sizing:border-box}body{margin:0}ul{list-style-type:none;padding:0}body{background-image:url(https://www.prf.cuni.cz/themes/custom/fsv_uk/images/tile.png);background-size:24px;background-color:hsl(var(--clr-white-tr))}h1,h2,h3{font-family:Verdana,Geneva,Tahoma,sans-serif}.description .content,.podcast-platforms,.footer{font-family:"Gill Sans","Gill Sans MT",Calibri,"Trebuchet MS",sans-serif}.description .content{font-size:1.2rem;line-height:1.8rem}.podcast-platforms{line-height:2rem}.episode--description{line-height:1.8rem;font-family:Calibri,Arial;font-size:1.2rem}.page{display:block;max-width:1024px;margin:0 auto;background-color:#fff}.header{border-bottom:5px solid hsl(var(--clr-red));min-height:500px;display:flex;background-image:linear-gradient(to left, white 20%, rgba(255, 255, 255, 0.5) 70%),url("../src/image/foto-min-min.jpg");background-size:cover;background-repeat:no-repeat}.header .logo{max-height:350px;margin-left:auto}.footer{display:flex;justify-content:space-between;align-items:center;margin:2em 0;padding-inline:2em}.footer .copyrights{line-height:2rem}.footer .logo--pf-uk{max-width:350px;height:auto}.description{padding-bottom:0}.description .content{max-width:85%;padding-inline:2em}.description h1{color:hsl(var(--clr-red));padding:1em 2em 0 2em}.episode{display:flex;flex-direction:row;flex-wrap:wrap;gap:0 1rem;margin-bottom:2em;padding:2em}.episode h3{width:100%;margin-bottom:2rem}.episode--description{max-width:50%}.episode--iframe{max-width:calc(50% - 1rem)}.episode-feed{padding-bottom:1em}.episode-feed li:nth-child(2n) .episode{background-color:hsl(var(--clr-red));color:#fff}.podcast-platforms{margin:2.5em 0;padding:2em;background-color:hsl(var(--clr-orange), 50%)}.podcast-platforms h2{margin:0;margin-bottom:1em;font-size:1.3rem;color:hsl(var(--clr-red))}.button-box{display:flex;gap:1em}.button{display:flex;justify-content:center;background-color:transparent;color:hsl(var(--clr-red));font-weight:600;text-decoration:none;text-transform:uppercase;padding:.2em 1em;border:2px solid hsl(var(--clr-red));transition:all 250ms}.button:hover{border:2px solid hsl(var(--clr-red));background-color:hsl(var(--clr-red));color:#fff}.button::after{content:"";padding-left:.5em;font-family:"Font Awesome 5 Free";font-weight:800;font-size:1.6rem;display:inline-block}
+@charset "UTF-8";
+:root {
+  --clr-red: 354, 65%, 51%;
+  --clr-orange: 13, 62%, 61%;
+  --clr-white-tr: 0, 0%, 96%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://www.prf.cuni.cz/themes/custom/fsv_uk/images/tile.png);
+  background-size: 24px;
+  background-color: hsl(var(--clr-white-tr));
+}
+
+h1,
+h2,
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description .content,
+.podcast-platforms,
+.footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.description .content {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.podcast-platforms {
+  line-height: 2rem;
+}
+
+.episode--description {
+  line-height: 1.8rem;
+  font-family: Calibri, Arial;
+  font-size: 1.2rem;
+}
+
+.page {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header {
+  border-bottom: 5px solid hsl(var(--clr-red));
+  min-height: 500px;
+  display: flex;
+  background-image: linear-gradient(to left, white 20%, rgba(255, 255, 255, 0.5) 70%), url("../image/foto-min-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .logo {
+  max-height: 350px;
+  margin-left: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  padding-inline: 2em;
+}
+.footer .copyrights {
+  line-height: 2rem;
+}
+.footer .logo--pf-uk {
+  max-width: 350px;
+  height: auto;
+}
+
+.description {
+  padding-bottom: 0;
+}
+.description .content {
+  max-width: 85%;
+  padding-inline: 2em;
+}
+.description h1 {
+  color: hsl(var(--clr-red));
+  padding: 1em 2em 0 2em;
+}
+
+.episode {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+.episode h3 {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.episode--description {
+  max-width: 50%;
+}
+.episode--iframe {
+  max-width: calc(50% - 1rem);
+}
+
+.episode-feed {
+  padding-bottom: 1em;
+}
+.episode-feed li:nth-child(2n) .episode {
+  background-color: hsl(var(--clr-red));
+  color: white;
+}
+
+.podcast-platforms {
+  margin: 2.5em 0;
+  padding: 2em;
+  background-color: hsl(var(--clr-orange), 50%);
+}
+.podcast-platforms h2 {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.3rem;
+  color: hsl(var(--clr-red));
+}
+
+.button-box {
+  display: flex;
+  gap: 1em;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: hsl(var(--clr-red));
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.2em 1em;
+  border: 2px solid hsl(var(--clr-red));
+  transition: all 250ms;
+}
+.button:hover {
+  border: 2px solid hsl(var(--clr-red));
+  background-color: hsl(var(--clr-red));
+  color: white;
+}
+.button::after {
+  content: "";
+  padding-left: 0.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  font-size: 1.6rem;
+  display: inline-block;
+}
