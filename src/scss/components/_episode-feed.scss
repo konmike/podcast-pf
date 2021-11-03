@@ -5,4 +5,8 @@
     background-color: hsl(var(--clr-red));
     color: white;
   }
+
+  li:last-child .episode {
+    margin-bottom: 0;
+  }
 }
