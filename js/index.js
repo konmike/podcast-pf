@@ -23,7 +23,7 @@ const APIController = (function () {
     const token = await _getToken();
     // console.log(token)
     const result = await fetch(
-        `https://api.spotify.com/v1/shows/73kX0Bae7x1ToI9dJ6Nu2O/episodes?market=ES`,
+      `https://api.spotify.com/v1/shows/73kX0Bae7x1ToI9dJ6Nu2O/episodes?market=ES`,
       // `https://api.spotify.com/v1/shows/1dNqQuHMd9o1ns1mn8Ut7S/episodes?market=ES`,
       {
         method: "GET",
@@ -32,7 +32,7 @@ const APIController = (function () {
     );
 
     const data = await result.json();
-    return data.items;
+    return data.items.reverse();
   };
 
   return {
